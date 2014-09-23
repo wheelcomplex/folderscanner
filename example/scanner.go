@@ -80,15 +80,15 @@ func scanner() {
 		switch {
 		case newInfo.Err != nil:
 			ecounter++
-			//fmt.Printf("E#%d: %v\n", ecounter, newInfo.Err)
+			fmt.Printf("E#%d: %v\n", ecounter, newInfo.Err)
 			//fsc.Close()
 		case newInfo.IsFolder == true:
 			dcounter++
-			//fmt.Printf("D#%d: %v\n", dcounter, newInfo.Path)
+			fmt.Printf("D#%d: %v\n", dcounter, newInfo.Path)
 			//fmt.Printf("%v\n", newInfo.Path)
 		default:
 			fcounter++
-			//fmt.Printf("F#%d: %v\n", fcounter, newInfo.Path)
+			fmt.Printf("F#%d: %v\n", fcounter, newInfo.Path)
 			//fmt.Printf("%v\n", newInfo.Path)
 		}
 	}
